@@ -1,5 +1,5 @@
-import type { CompilerError } from 'vue/compiler-sfc'
-import { generateCodeFrame } from 'vue/compiler-sfc'
+import type { CompilerError } from '@vue/compiler-sfc'
+import { generateCodeFrame } from '@vue/compiler-sfc'
 import chalk = require('chalk')
 
 export function formatError(

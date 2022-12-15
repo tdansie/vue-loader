@@ -5,14 +5,14 @@ import * as loaderUtils from 'loader-utils'
 
 import hash = require('hash-sum')
 
-import { parse } from 'vue/compiler-sfc'
+import { parse } from '@vue/compiler-sfc'
 import type {
   TemplateCompiler,
   CompilerOptions,
   SFCBlock,
   SFCTemplateCompileOptions,
   SFCScriptCompileOptions,
-} from 'vue/compiler-sfc'
+} from '@vue/compiler-sfc'
 import { selectBlock } from './select'
 import { genHotReloadCode } from './hotReload'
 import { genCSSModulesCode } from './cssModules'

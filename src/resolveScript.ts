@@ -3,10 +3,10 @@ import type {
   SFCDescriptor,
   SFCScriptBlock,
   TemplateCompiler,
-} from 'vue/compiler-sfc'
+} from '@vue/compiler-sfc'
 import type { VueLoaderOptions } from 'src'
 import { resolveTemplateTSOptions } from './util'
-import { compileScript } from 'vue/compiler-sfc'
+import { compileScript } from '@vue/compiler-sfc'
 
 const clientCache = new WeakMap<SFCDescriptor, SFCScriptBlock | null>()
 const serverCache = new WeakMap<SFCDescriptor, SFCScriptBlock | null>()

@@ -3,11 +3,11 @@ import * as qs from 'querystring'
 import * as loaderUtils from 'loader-utils'
 import { VueLoaderOptions } from './'
 import { formatError } from './formatError'
-import type { TemplateCompiler } from 'vue/compiler-sfc'
+import type { TemplateCompiler } from '@vue/compiler-sfc'
 import { getDescriptor } from './descriptorCache'
 import { resolveScript } from './resolveScript'
 import { resolveTemplateTSOptions } from './util'
-import { compileTemplate } from 'vue/compiler-sfc'
+import { compileTemplate } from '@vue/compiler-sfc'
 
 // Loader that compiles raw template into JavaScript functions.
 // This is injected by the global pitcher (../pitch) for template
